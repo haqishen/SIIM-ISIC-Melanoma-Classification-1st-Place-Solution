@@ -40,7 +40,7 @@ More details can be found here: https://www.kaggle.com/c/siim-isic-melanoma-clas
 
 Training commands of the 18 models. Training time for a single model ranges from 15 to 45 hours for all 5 folds in our setup.
 
-After training, models will be saved in `/.weights/` Tranning logs will be saved in `./logs/`
+After training, models will be saved in `./weights/` Tranning logs will be saved in `./logs/`
 
 ```
 python train.py --kernel-type 9c_meta_b3_768_512_ext_18ep --data-dir ./data/ --data-folder 768 --image-size 512 --enet-type efficientnet_b3 --use-meta --n-epochs 18 --use-amp --CUDA_VISIBLE_DEVICES 0,1
@@ -178,3 +178,12 @@ The submission file `final_sub1.csv` will be saved in root directory.
 ```
 python ensemble.py
 ```
+
+### Trained Weights
+
+We published our trained weigths of the model settings above (which we won this competition):
+
+https://www.kaggle.com/boliu0/melanoma-winning-models
+
+Download it into `./weights/` then you can run `evaluate.py` and `predict.py` directly.
+
