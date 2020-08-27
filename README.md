@@ -1,6 +1,6 @@
 ## SIIM-ISIC-Melanoma-Classification-1st-Place-Solution
 
-Competition LeaderBoard: https://www.kaggle.com/c/siim-isic-melanoma-classification/leaderboard 
+Competition Leaderboard: https://www.kaggle.com/c/siim-isic-melanoma-classification/leaderboard 
 
 ### SOFTWARE (python packages are detailed separately in `requirements.txt`)
 
