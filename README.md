@@ -26,6 +26,12 @@ do
 done
 ```
 
+### Model Illustration
+
+![](https://github.com/haqishen/SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/blob/master/figure1.png)
+
+More details can be found here: https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175412
+ 
 
 ### Training
 
