@@ -31,7 +31,7 @@ done
 
 Training commands of the 18 models. Training time for a single model ranges from 15 to 45 hours for all 5 folds in our setup.
 
-After training, models will be saved in `/weights/` Tranning logs will be saved in `./logs/`
+After training, models will be saved in `/.weights/` Tranning logs will be saved in `./logs/`
 
 ```
 python train.py --kernel-type 9c_meta_b3_768_512_ext_18ep --data-dir ./data/ --data-folder 768 --image-size 512 --enet-type efficientnet_b3 --use-meta --n-epochs 18 --use-amp --CUDA_VISIBLE_DEVICES 0,1
@@ -75,7 +75,7 @@ python train.py --kernel-type 9c_se_x101_640_ext_15ep --data-dir ./data/ --data-
 
 Optionally, you can evaluate each model on 5 fold cross valiation sets. You can either use the models trained in previous step, or use the trained models we provided and specify the directory in `--model-dir`.
 
-Evaluation results will be printed out and saved to `./logs/` Out-of-folds prediction results will be saved to `/oofs/`
+Evaluation results will be printed out and saved to `./logs/` Out-of-folds prediction results will be saved to `./oofs/`
 
 
 ```
@@ -120,7 +120,7 @@ python evaluate.py --kernel-type 9c_se_x101_640_ext_15ep --data-dir ./data/ --da
 
 Make predictions on test set. You can either use the models trained in the Training step, or use the trained models we provided and specify the directory in `--model-dir`
 
-Each models submission file will be saved to `/subs`
+Each models submission file will be saved to `./subs/`
 
 ```
 python predict.py --kernel-type 9c_meta_b3_768_512_ext_18ep --data-dir ./data/ --data-folder 768 --image-size 512 --enet-type efficientnet_b3 --use-meta
