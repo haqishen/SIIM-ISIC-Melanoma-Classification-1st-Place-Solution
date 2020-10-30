@@ -26,7 +26,7 @@ class MelanomaDataset(Dataset):
         row = self.csv.iloc[index]
 
         image = cv2.imread(row.filepath)
-        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
         if self.transform is not None:
             res = self.transform(image=image)
