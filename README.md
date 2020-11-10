@@ -33,9 +33,12 @@ done
 
 ![](https://github.com/haqishen/SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/blob/master/figure1.png)
 
-More details can be found here: https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175412
- 
+More details can be found here: 
 
+https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175412
+
+http://arxiv.org/abs/2010.05351
+ 
 ### Training
 
 Training commands of the 18 models. Training time for a single model ranges from 15 to 45 hours for all 5 folds in our setup.
