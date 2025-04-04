@@ -72,8 +72,7 @@ def main():
     for fold in range(5):
 
         if args.eval == 'best':
-            model_file = 
-            os.path.join(args.model_dir, f'{args.kernel_type}_best_fold{fold}.pth')
+            model_file = os.path.join(args.model_dir, f'{args.kernel_type}_best_fold{fold}.pth')
         elif args.eval == 'best_20':
             model_file = os.path.join(args.model_dir, f'{args.kernel_type}_best_20_fold{fold}.pth')
         if args.eval == 'final':
